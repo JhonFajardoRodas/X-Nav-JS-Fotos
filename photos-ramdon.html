@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+   <head>
+     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+     <title>Simple calculator</title>
+     <script type="text/javascript" charset="utf-8">
+     var images = [
+       'http://3.bp.blogspot.com/-qjMCaObCc7g/T1U08Gxz3cI/AAAAAAAAAnc/4BS0D1Wf2iE/s1600/jonah%2Bduck.jpg',
+       'http://i0.wp.com/www.nacionchicles.com/wp-content/uploads/2014/07/imagenes-aleatorias-internet-al-maximo-5.jpg?resize=960%2C645',
+       'http://www.hazmelarusa.com/wp-content/uploads/2014/07/215a20f311-500x301.jpg',
+       'http://www.hazmelarusa.com/wp-content/uploads/2014/10/53f36a1.jpg',
+       'http://img.desmotivaciones.es/201206/296Lamuertenovaapreguntartequcomascuntodormasquhacasetc.Simplementevendryteirsconella.jpg',
+       'https://pbs.twimg.com/profile_images/3549029586/3607341f60496b2a274b91dcc3934963.jpeg',
+       'http://2.bp.blogspot.com/-EzoohjQkhhg/TmDnYhGE9rI/AAAAAAAAADY/eJ9va741L1o/s1600/palabras+contra+el+olvido.jpg'
+     ]
+     function show_rd_images(id){
+
+       var element = document.getElementById(id);
+       photoURL = images[Math.floor(Math.random()*images.length)]
+       element.innerHTML = '<img src="' + photoURL + '" width = 300 height= 300>';
+     }
+     </script>
+   </head>
+   <body>
+     <p>Para ver la imagen del día pincha <a href="javascript:show_rd_images('img')">     Aquí !!  </a></p>
+     <span id='img'></span>
+
+   </body>
+</html>
